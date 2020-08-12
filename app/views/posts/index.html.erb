@@ -1,0 +1,11 @@
+<h1>所有的文章</h1>
+<%= link_to "新增", new_post_path %>
+<table border="1px">
+<% @posts.each do |post| %>
+    <tr>
+        <td><%= post.title %></td>
+        <td><%= post.content %></td>
+        <td><%= post.price %></td>
+    </tr>
+<% end %>
+</table>
